@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      window.addEventListener('load', function () {
+        const loader = document.querySelector('.page-loader');
+        if (loader) {
+          setTimeout(() => loader.classList.add('hidden'), 700);
+        }
+      });
+      const path = window.location.pathname;
+      document.write(`<base href="${path.includes('/pages/') ? '../' : './'}">`);
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BankGuard AI | Premium Churn Intelligence</title>
+    <meta name="description" content="A premium frontend experience for a fintech churn prediction platform with polished analytics and customer intelligence." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="page-loader"><div class="spinner"></div></div>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="brand"><span class="brand-badge"><i class="fa-solid fa-shield-halved"></i></span> BankGuard AI</a>
+        <div class="nav-links">
+          <a class="active" href="index.html">Home</a>
+          <a href="pages/about.html">About</a>
+          <a href="pages/features.html">Features</a>
+          <a href="pages/dashboard.html">Dashboard</a>
+          <a href="pages/prediction.html">Prediction</a>
+          <a href="pages/analytics.html">Analytics</a>
+          <a href="pages/contact.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeToggle"><i class="fas fa-moon"></i></button>
+          <a class="btn btn-gradient" href="pages/login.html">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        <div data-aos="fade-right">
+          <div class="eyebrow">Next-gen finance intelligence</div>
+          <h1>Protect growth with AI-powered churn defense.</h1>
+          <p>BankGuard AI gives financial teams a premium command center for forecasting churn risk, improving retention, and driving lifetime value with elegant automation.</p>
+          <div class="hero-badges">
+            <span class="badge-pill"><i class="fa-solid fa-bolt"></i> Real-time insights</span>
+            <span class="badge-pill"><i class="fa-solid fa-lock"></i> Enterprise security</span>
+            <span class="badge-pill"><i class="fa-solid fa-chart-line"></i> 99.2% precision</span>
+          </div>
+          <div class="hero-badges mt-3">
+            <a class="btn btn-gradient" href="pages/prediction.html">Get Started</a>
+            <a class="btn-outline" href="pages/dashboard.html">Explore Dashboard</a>
+          </div>
+        </div>
+        <div class="hero-visual" data-aos="fade-left">
+          <div class="floating-chip one">Live retention score</div>
+          <div class="floating-chip two">+18.4% uplift</div>
+          <div class="hero-card">
+            <div class="card-top"><span class="badge-pill"><i class="fa-solid fa-signal"></i> Risk Overview</span><span class="badge-pill">24/7</span></div>
+            <div class="row mt-4">
+              <div class="col">
+                <div class="stat-large">94.8%</div>
+                <div class="muted">Healthy retention</div>
+              </div>
+              <div class="col">
+                <div class="stat-large">7.2k</div>
+                <div class="muted">Active accounts</div>
+              </div>
+            </div>
+            <img src="assets/images/hero-illustration.svg" alt="Banking dashboard illustration" class="mt-3" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-title text-center" data-aos="fade-up">
+            <span class="eyebrow">Performance snapshot</span>
+            <h2>Trusted by leading digital banks and fintech teams.</h2>
+            <p>From onboarding to renewal, every interaction becomes a moment to strengthen the customer relationship.</p>
+          </div>
+          <div class="stat-grid">
+            <div class="stat-card" data-aos="fade-up"><div class="value" data-count="128000" data-suffix="+">0</div><div class="label">Customers monitored</div></div>
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="100"><div class="value" data-count="18600" data-suffix="+">0</div><div class="label">High-risk alerts</div></div>
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="200"><div class="value" data-count="981" data-suffix="%">0</div><div class="label">Prediction accuracy</div></div>
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="300"><div class="value" data-count="243" data-suffix="M">0</div><div class="label">Revenue protected</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <span class="eyebrow">Core capabilities</span>
+            <h2>Everything you need for intelligent retention strategy.</h2>
+          </div>
+          <div class="feature-grid">
+            <div class="feature-card" data-aos="fade-up">
+              <div class="feature-icon"><i class="fa-solid fa-brain"></i></div>
+              <h3>AI Risk Scoring</h3>
+              <p>Prioritize customers using advanced churn signals and dynamic probability models.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-icon"><i class="fa-solid fa-chart-pie"></i></div>
+              <h3>Executive Analytics</h3>
+              <p>Visualize behavior patterns, segment trends, and growth opportunities in one view.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-icon"><i class="fa-solid fa-bell"></i></div>
+              <h3>Proactive Outreach</h3>
+              <p>Launch campaigns with personalized recommendations before customers disengage.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <span class="eyebrow">How it works</span>
+            <h2>A refined workflow for modern retention teams.</h2>
+          </div>
+          <div class="process-grid">
+            <div class="process-card" data-aos="fade-up">
+              <div class="process-step">1</div>
+              <h3>Collect Signals</h3>
+              <p>Gather account, spending, engagement, and service data in seconds.</p>
+            </div>
+            <div class="process-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="process-step">2</div>
+              <h3>Predict Risk</h3>
+              <p>Instantly score churn probability and highlight high-value intervention areas.</p>
+            </div>
+            <div class="process-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="process-step">3</div>
+              <h3>Retain Smarter</h3>
+              <p>Deploy targeted offers and personalize experiences to improve loyalty.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <span class="eyebrow">Customer stories</span>
+            <h2>Teams love the clarity of BankGuard AI.</h2>
+          </div>
+          <div class="testimonial-grid">
+            <div class="testimonial-card" data-aos="fade-up">
+              <div class="rating">★★★★★</div>
+              <p>“The dashboard feels like a premium product suite. It transformed how our finance team manages retention.”</p>
+              <div class="person"><div class="avatar">MK</div><div><strong>Mina K.</strong><div class="muted small">VP Growth, Northstar Bank</div></div></div>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="rating">★★★★★</div>
+              <p>“Executive reporting is now effortless and visually stunning. The retention uplift has been remarkable.”</p>
+              <div class="person"><div class="avatar">AL</div><div><strong>Ashley L.</strong><div class="muted small">Director of CRM, Helio Fintech</div></div></div>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="rating">★★★★★</div>
+              <p>“The product feels enterprise-grade and the UX is exceptional. It impresses every stakeholder.”</p>
+              <div class="person"><div class="avatar">RJ</div><div><strong>Rafael J.</strong><div class="muted small">Head of Analytics, Apex Capital</div></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <span class="eyebrow">FAQ</span>
+            <h2>Everything you need to know before you launch.</h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item" data-aos="fade-up">
+              <div class="question"><span>Is the experience fully responsive?</span><i class="fa-solid fa-plus"></i></div>
+              <div class="answer">Yes. Every page is designed to feel premium across desktop, tablet, and mobile with fluid spacing and touch-friendly controls.</div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="question"><span>Can I customize the visual system?</span><i class="fa-solid fa-plus"></i></div>
+              <div class="answer">The interface is built with CSS variables so themes, colors, and spacing can be adjusted quickly.</div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="question"><span>Is this ready for portfolio presentation?</span><i class="fa-solid fa-plus"></i></div>
+              <div class="answer">Absolutely. The project is polished, modular, and demonstration-ready for faculty, recruiters, or clients.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-card" data-aos="fade-up">
+              <div class="eyebrow">Let's connect</div>
+              <h3>Book a product walkthrough</h3>
+              <p class="muted">Share your goals and discover how BankGuard AI can elevate your customer strategy.</p>
+            </div>
+            <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+              <form class="form-floating">
+                <input type="text" placeholder="Your name" />
+                <input type="email" placeholder="Email address" />
+                <textarea rows="4" placeholder="Tell us about your vision"></textarea>
+                <button class="btn btn-gradient">Request Demo</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand"><span class="brand-badge"><i class="fa-solid fa-shield-halved"></i></span> BankGuard AI</div>
+          <p class="muted mt-3">Premium customer intelligence for modern financial institutions.</p>
+          <div class="socials"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+        </div>
+        <div>
+          <h5>Product</h5>
+          <div class="muted">Overview<br />Analytics<br />Pricing</div>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <div class="muted">About<br />Careers<br />Contact</div>
+        </div>
+        <div>
+          <h5>Resources</h5>
+          <div class="muted">Blog<br />FAQ<br />Support</div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="modal"><div class="modal-card"><h4>Welcome to BankGuard AI</h4><p class="muted">This frontend experience is fully interactive and designed for presentation-ready demos.</p><button class="btn btn-gradient" data-open-modal>Close</button></div></div>
+    <div class="toast" id="toast"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>AOS.init({ duration: 800, once: true });</script>
+  </body>
+</html>
